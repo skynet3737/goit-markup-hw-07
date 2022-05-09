@@ -457,62 +457,63 @@
       </div>
     </footer>
 
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <div class="modal-indent">
-            <label class="font-style" for="name">Имя</label>
-            <input class="modal-input" type="text" id="name" autofocus required />
-            <svg class="modal-svg">
+          <div class="modal__indent">
+            <label class="modal__font" for="name">Имя</label>
+            <input class="modal__input" type="text" id="name" autofocus required />
+            <svg class="modal__icon">
               <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
           </div>
 
-          <div class="modal-indent">
-            <label class="font-style" for="tel">Телефон</label>
-            <input class="modal-input" type="tel" id="tel" required />
-            <svg class="modal-svg">
+          <div class="modal__indent">
+            <label class="modal__font" for="tel">Телефон</label>
+            <input class="modal__input" type="tel" id="tel" required />
+            <svg class="modal__icon">
               <use href="./images/symbol-defs.svg#icon-phone-black"></use>
             </svg>
           </div>
 
-          <div class="modal-indent">
-            <label class="font-style" for="mail">Почта</label>
-            <input class="modal-input" type="email" id="mail" required />
-            <svg class="modal-svg">
+          <div class="modal__indent">
+            <label class="modal__font" for="mail">Почта</label>
+            <input class="modal__input" type="email" id="mail" required />
+            <svg class="modal__icon">
               <use href="./images/symbol-defs.svg#icon-email-black"></use>
             </svg>
           </div>
 
           <div>
-            <label class="font-style" for="coment">Комментарий</label>
+            <label class="modal__font" for="coment">Комментарий</label>
             <textarea
-              class="modal-textarea"
+              class="modal__textarea"
               name="coments"
               id="coment"
               placeholder="Введите текст"
             ></textarea>
           </div>
 
-          <div class="modal-agreement">
-            <input class="modal-checkbox" type="checkbox" id="checkbox" />
+          <div class="modal__agreement">
+            <input class="modal__checkbox" type="checkbox" id="checkbox" />
             <label for="checkbox">
-              Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю <a class="modal__link" href="">Условия договора</a>
             </label>
 
-            <svg class="modal-check vector">
+            <svg class="modal__check vector">
               <use href="./images/symbol-defs.svg#icon-Vector"></use>
             </svg>
 
-            <svg class="modal-check check">
+            <svg class="modal__check check">
               <use href="./images/symbol-defs.svg#icon-check"></use>
             </svg>
           </div>
 
-          <button class="modal-button" type="submit">Отправить</button>
+          <button class="modal__button" type="submit">Отправить</button>
         </form>
-        <svg class="modal-close" data-modal-close>
+        <svg class="modal__close" data-modal-close>
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </div>
